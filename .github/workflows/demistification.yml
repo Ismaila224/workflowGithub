@@ -4,9 +4,14 @@ on: push
 jobs:
   intit:
     runs-on: ubuntu-latest
+
+    env:
+      STEP1: "Le code vient d'être poussé sur github"
     steps:
       - name: Etape 1 - Installation
-        run: echo "Etape 1 - Installation"
+        run: 
+          echo "Etape 1 - Installation"
+          echo "STEP1 = $STEP1"
       - name: Etape 2 - Récuperation du code
         run: echo "Etape 2 - Récuperation du code"
       - name: Etape 3 - Build
