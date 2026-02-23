@@ -1,0 +1,16 @@
+name: Démonstration CI
+on: push
+
+jobs:
+  intit:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Set up job"
+      - run: echo "Etape 1 - Installation"
+      - run: echo "Etape 2 - Récuperation du code"
+      - run: echo "Etape 3 - Build"
+      - run: echo "Etape 4 - Tests"
+      - run: echo "Etape 5 - Packaging"
+      - run: echo "Etape 6 - Fin du pipeline"
+      - run: echo "Etape 6 - Complete job"
+        
