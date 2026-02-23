@@ -9,11 +9,9 @@ jobs:
       STEP1: "Le code vient d'être poussé sur github"
     steps:
       - name: Etape 1 - Installation
-        run: 
-          echo "Etape 1 - Installation"
-          echo "STEP1 = $STEP1"
+        run: echo "STEP1 = $STEP1"
       - name: Etape 2 - Récuperation du code
-        run: echo "Etape 2 - Récuperation du code"
+        run: echo "STEP2 = ${{vars.STEP2}}"
       - name: Etape 3 - Build
         run: echo "Etape 3 - Build"
       - name: Etape 4 - Tests
